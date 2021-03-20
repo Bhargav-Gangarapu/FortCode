@@ -1,0 +1,102 @@
+1) User Creation API:
+
+URL: https://localhost:44391/api/UserLogin/registerUser
+Method: POST
+JSON Object:
+{
+    "Name": "admin",
+    "Email": "admin@gmail.com",
+    "Password":"12345"
+}
+Output:
+{
+    "success": true,
+    "message": "User Created Successfully !!!"
+}
+
+-------------------------------------------------------------------------
+2) Authenticating the User API:
+
+URL: https://localhost:44391/api/UserLogin/checkloginuser
+Method: POST
+Headers: Pass the Email and Password parameters in Headers
+Output:
+{
+    "success": true,
+    "message": "User Login Successfull !!!"
+}
+
+-------------------------------------------------------------------------
+3) Add the Cities API:
+
+URL: https://localhost:44391/api/City/addCity
+Method: POST
+Headers: Pass the Email and Password parameters in Headers
+JSON Object:
+{
+    "CityName":"California",
+    "Country":"America"
+}
+Output:
+1) For Authoized User output is below
+{
+    "success": true,
+    "message": "City Added Successfull !!!"
+}
+
+2) for Unauthorized user 
+{
+    "success": false,
+    "message": "Not an Authorized User"
+}
+-------------------------------------------------------------------------
+3) Delete the City API:
+
+URL: https://localhost:44391/api/City/deleteCity
+Method: Delete
+Headers: Pass the Email and Password parameters in Headers
+JSON Object:
+{
+    "cityId": 3
+}
+Output:
+1) For Authoized User output is below
+{
+    "success": true,
+    "message": "City Deleted Successfully!!!"
+}
+
+2) for Unauthorized user 
+{
+    "success": false,
+    "message": "Not an Authorized User"
+}
+-------------------------------------------------------------------------
+3) Get the List of Cities API:
+
+URL: https://localhost:44391/api/City/getCityList
+Method: Get
+Headers: Pass the Email and Password parameters in Headers
+Output:
+1) For Authoized User output is below
+{
+    "success": true,
+    "result": [
+        {
+            "cityId": 1,
+            "cityName": "Hyderabad",
+            "country": "India"
+        },
+        {
+            "cityId": 4,
+            "cityName": "California",
+            "country": "America"
+        }
+    ]
+}
+2) for Unauthorized user 
+{
+    "success": false,
+    "message": "Not an Authorized User"
+}
+-------------------------------------------------------------------------

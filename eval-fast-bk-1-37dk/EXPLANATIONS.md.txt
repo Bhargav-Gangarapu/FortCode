@@ -1,0 +1,26 @@
+1) Create the User:
+
+Add the User by Sending the JSON Object as Email , Name , Password
+
+2) A user should be able to authenticate with an email and password
+
+By Sending the Email and Password We will Validate whether the user is valid or not
+
+3) An authenticated user should be able to add and remove their favorite cities where a city consists of the following:
+
+Adding the City:
+
+By Sending the Email and Password We will Validate whether the user is valid or not after that
+we will add the cities by sending the JSON Object.
+
+Deleting the City:
+
+By Sending the Email and Password We will Validate whether the user is valid or not after that
+we will remove the cities by sending the JSON Object.
+
+4) An authenticated user should be able to retrieve a list of their favorite cities
+
+By Sending the Email and Password We will Validate whether the user is valid or not after that
+we will Display the List of Cities
+
+
